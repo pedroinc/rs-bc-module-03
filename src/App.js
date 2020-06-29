@@ -17,9 +17,9 @@ function App() {
   async function handleAddRepository() {
 
     const response = await api.post('/repositories', {
-      title: "Hocus Pocus",
-      url: "git@github.com:pedroinc/hocus-pocus.git",
-      techs: ["node", "react"]	
+      title: "My New Repo Title",
+      url: "git@github.com:pedroinc/my-new-repo-url.git",
+      techs: ["node", "react", "react native"]	
     })
 
     const justAddedRepo = response.data;
